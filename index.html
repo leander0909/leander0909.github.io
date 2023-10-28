@@ -1,11 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            My site!
-        </title>
-    </head>
-    <body>
-        <h1>This is my Github Pages website</h1>
-    </body>
-</html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leander Perez</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec2a01fc74.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" id="logo">
+            <ul id="sidemenu">
+                
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    
+            </ul>
+            <img src="images/sun.png" id="icon">
+            
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Engineer</p>
+            <h1>Hi, I'm <span>Leander Danilo<br>Ramon Perez</span></h1>
+            <div class="tech-stack">
+                <p>Tech Stack:</p>
+                <div id="prog-icon">
+                    <i class="fa-brands fa-python"></i>
+                    <i class="fa-brands fa-java"></i>
+                    <i class="fa-solid fa-c"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-react"></i>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- --------about------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Currently a co-founder and a CTO of an AI startup. A computer engineering graduate. Has internship experience at Skunk Works (meldCX) in the computer vision department.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Computer Vision</span><br>Code algorithms, Train and Inference AI models</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>1 year</span><br>Co-founder and CTO of Enyoumerate AI<br>
+                            Coded the algorithm for the utilization of the AI model, trained the AI model, QA the accuracy of the model. <br>
+                            (Python, OpenCV, YOLOv5, Pytorch, Label Studio, Google Colab)</li>
+                        <li><span>3 months</span><br>Computer Vision Intern at meldCX<br>
+                            Was assigned in the computer vision department along with another intern then collaborated with our leads for the 
+                            tasks assigned to us which include the following:
+                            Convert datasets to other formats to be compatible with training other models. Training models to be tested and 
+                            used. Improve inference accuracy of the model, as well as having experience in reading documentation in 
+                            Huggingface. Annotate datasets to be used in training. Then QA datasets that was annotated if there are errors 
+                            during annotation. Made automation scripts to visualize the annotations for QA purposes. <br>
+                            (Python, OpenCV, Huggingface, Pytorch, Label Studio, Google Colab)
+                            </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Computer Engineer</span><br>University of Science and Technology of Southern Philippines</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------services--------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Computer Vision</h2>
+                <p>Train Computer Vision/AI models like YOLOv5, mmmocr, ParseQ, etc. Code the algorithm to make use of the models. Convert datasets to another format for training usage into other models.</p>
+                <a href="#portfolio">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web App Development</h2>
+                <p>jksdf asdf asdfmasdf asdf asdfjasdjsd f asdf sd f asdf asd f asd</p>
+                <a href="#portfolio">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>jksdf asdf asdfmasdf asdf asdfjasdjsd f asdf sd f asdf asd f asd</p>
+                <a href="#portfolio">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------portfolio--------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/fishing_1.png" alt="" class="slider-img1">
+                <div class="layer">
+                    <h3>Fishing Ban System App</h3>
+                    <p>A system that people can use to report fishing ban violations. Then get responded by responders to catch the violators.</p>
+                    
+                    <p>(Tech Stack: Kodular, Firebase, Google Maps API)</p>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    <div class="slider">
+                        <button id="prev1" class="btn" onclick="reply_click()">Prev</button>
+                        <button id="next1" class="btn" onclick="reply_click()">Next</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/enyou_1.png" alt="" class="slider-img2">
+                <div class="layer">
+                    <h3>Enyoumerate</h3>
+                    <p>An AI-based people counter and customer behaviour analytics for data-driven decision making for retail stores.</p>
+                    <p>Coded the algorithm for the people counting. Trained the AI models used. QA the accuracy of the object detection.</p>
+                    <p>(Tech Stack: Python, OpenCV, YOLOv5, PyTorch, Label Studio, Google Colab)</p>
+                    <a href="https://www.facebook.com/EnYoumerate"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <div class="slider">
+                        <button id="prev2" class="btn" onclick="reply_click()">Prev</button>
+                        <button id="next2" class="btn" onclick="reply_click()">Next</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/dental.png" alt="">
+                <div class="layer">
+                    <h3>Dental Clinic Reservation System</h3>
+                    <p>Input the necessary details like name of patient, date, type of service they are getting and then storing it in a table for reference.</p>
+                    <p>Tech Stack: Java</p>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+</div>
+
+<!-- --------------contact---------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> leanderdlperez@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 09777315875</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100008180379648"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/leander-danilo-ramon-perez-a8a633282"><i class="fa-brands fa-linkedin"></i></a>
+                    
+                </div>
+                <a href="images/Leander-Danilo-Ramon-Perez-Resume.pdf" download class="btn btn2">Download Resume</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made by: Leander Danilo Ramon Perez <i class="fa-solid fa-code"></i> </p>
+    </div>
+</div>
+
+    
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzOvuI9IpxDAuSGwCQL5RLgcZJluy-JG0lZbmXuqa3ifbuRUpNfTqQ8CQcs-aVo1GrKEQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<script>
+
+    var icon = document.getElementById("icon");
+    var logo = document.getElementById("logo");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-mode")
+        if(document.body.classList.contains("dark-mode")){
+            icon.src = "images/moon.png"
+            logo.src = "images/logo_dark.png"
+        }else{
+            icon.src = "images/sun.png"
+            logo.src = "images/logo.png"
+        }
+    
+    
+    }
+
+
+</script>
+
+<!-- <script>
+
+    var slider_img;
+    var images;
+    var i = 0;
+
+    function reply_click(){
+        btn_clicked = event.srcElement.id;
+        if ((btn_clicked === "prev1") || (btn_clicked === "next1")) {
+            slider_img = document.querySelector('.slider-img1');
+            images = ['fishing_1.png', 'fishing_2.png', 'fishing_3.png', 'fishing_4.png', 'fishing_5.png', 'fishing_6.png'];
+            if(btn_clicked === "prev1"){
+                prev();
+            }else{
+                next();
+            }
+        }
+        if ((btn_clicked === "prev2") || (btn_clicked === "next2")) {
+            slider_img = document.querySelector('.slider-img2');
+            images = ['enyou_1.png', 'enyou_2.png', 'enyou_3.png', 'enyou_4.png'];
+            if(btn_clicked === "prev2"){
+                prev();
+            }else{
+                next();
+            }
+        }
+    }
+
+
+    function prev(){
+        if(i <= 0) i = images.length;
+        i--;
+        return setImg();
+    }
+
+    function next(){
+        if(i >= images.length-1) i = -1;
+        i++;
+        return setImg();
+    }
+
+    function setImg(){
+        return slider_img.setAttribute('src', 'images/' + images[i]);
+    }
+
+</script> -->
+
+<script>
+    // Define an array of slider objects, each containing the slider_img, images, and index (i)
+    var sliders = [
+        {
+            slider_img: document.querySelector('.slider-img1'),
+            images: ['fishing_1.png', 'fishing_2.png', 'fishing_3.png', 'fishing_4.png', 'fishing_5.png', 'fishing_6.png'],
+            i: 0 // Initial index
+        },
+        {
+            slider_img: document.querySelector('.slider-img2'),
+            images: ['enyou_1.png', 'enyou_2.png', 'enyou_3.png', 'enyou_4.png'],
+            i: 0 // Initial index
+        }
+    ];
+
+    // Function to handle button click
+    function reply_click() {
+        btn_clicked = event.srcElement.id;
+
+        // Iterate through each slider object in the sliders array
+        sliders.forEach(function (slider, index) {
+            // Check if the button matches "prev" or "next" for the current slider
+            if ((btn_clicked === "prev" + (index + 1)) || (btn_clicked === "next" + (index + 1))) {
+                // If it's a "prev" button, move to the previous image
+                if (btn_clicked === "prev" + (index + 1)) {
+                    prev(slider);
+                } else { // If it's a "next" button, move to the next image
+                    next(slider);
+                }
+                // Update the image on the current slider
+                setImg(slider);
+            }
+        });
+    }
+
+    // Function to move to the previous image for a specific slider
+    function prev(slider) {
+        if (slider.i <= 0) slider.i = slider.images.length;
+        slider.i--;
+    }
+
+    // Function to move to the next image for a specific slider
+    function next(slider) {
+        if (slider.i >= slider.images.length - 1) slider.i = -1;
+        slider.i++;
+    }
+
+    // Function to update the image for a specific slider
+    function setImg(slider) {
+        slider.slider_img.setAttribute('src', 'images/' + slider.images[slider.i]);
+    }
+</script>
+
+</body>
+
+</html> 
