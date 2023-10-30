@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leander Perez</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <script src="https://kit.fontawesome.com/ec2a01fc74.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -110,13 +110,13 @@
             <div>
                 <i class="fa-solid fa-crop"></i>
                 <h2>Web App Development</h2>
-                <p>jksdf asdf asdfmasdf asdf asdfjasdjsd f asdf sd f asdf asd f asd</p>
+                <p>Crafting Features, Enhancing User Experience, and Optimizing Performance Using Modern Technologies and Frameworks.</p>
                 <a href="#portfolio">Learn more</a>
             </div>
             <div>
                 <i class="fa-brands fa-app-store-ios"></i>
                 <h2>App Design</h2>
-                <p>jksdf asdf asdfmasdf asdf asdfjasdjsd f asdf sd f asdf asd f asd</p>
+                <p>Crafting Intuitive User Interfaces and Engaging User Experiences for Mobile Applications.</p>
                 <a href="#portfolio">Learn more</a>
             </div>
         </div>
@@ -159,14 +159,27 @@
                 </div>
             </div>
             <div class="work">
+                <img src="images/spoti_3.png" class="slider-img3" alt="">
+                <div class="layer">
+                    <h3>SpotiParty</h3>
+                    <p>Access your Spotify Wrapped anytime through a web application.</p>
+                    <p>Tech Stack: (HTML, CSS, Flask)</p>
+                    <div class="slider">
+                        <button id="prev3" class="btn" onclick="reply_click()">Prev</button>
+                        <button id="next3" class="btn" onclick="reply_click()">Next</button>
+                    </div>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+            <!-- <div class="work">
                 <img src="images/dental.png" alt="">
                 <div class="layer">
                     <h3>Dental Clinic Reservation System</h3>
                     <p>Input the necessary details like name of patient, date, type of service they are getting and then storing it in a table for reference.</p>
                     <p>Tech Stack: Java</p>
-                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    
                 </div>
-            </div>
+            </div> -->
         </div>
         
         <!-- <a href="#" class="btn">See more</a> -->
@@ -339,7 +352,13 @@
             slider_img: document.querySelector('.slider-img2'),
             images: ['enyou_1.png', 'enyou_2.png', 'enyou_3.png', 'enyou_4.png'],
             i: 0 // Initial index
+        },
+        {
+            slider_img: document.querySelector('.slider-img3'),
+            images: ['spoti_3.png', 'spoti_1.png', 'spoti_2.png', 'spoti_3.png', 'spoti_4.png', 'spoti_5.png', 'spoti_6.png'],
+            i: 0 // Initial index
         }
+
     ];
 
     // Function to handle button click
