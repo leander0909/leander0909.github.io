@@ -9,6 +9,7 @@
     --primary-color: #080808;
     --secondary-color: #f0ecec;
     --background-img: url(images/background.png);
+    --phone-background-img: url(images/phone-background.png);
 }
 
 html{
@@ -23,6 +24,7 @@ body{
     --primary-color: #f0ecec;
     --secondary-color: #080808;
     --background-img: url(images/background_white.png);
+    --phone-background-img: url(images/phone-background-white.png);
 }
 #logo{
     width: 140px;
@@ -423,7 +425,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/phone-background.png);
+        background-image: var(--phone-background-img);
     }
     .header-text{
         margin-top: 100%;
