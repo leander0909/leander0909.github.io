@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #080808;
+    --secondary-color: #fff;
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.dark-mode {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.icons i{
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+    
+
